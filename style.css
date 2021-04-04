@@ -15,7 +15,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -99,8 +99,31 @@ a:active {
 
 .music {
   font-size: 8px;
-  text-align: right;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+.credit,
+.credit-details {
+  transition: 0.3s;
+}
+
+
+.credit-details {
+  opacity: 0;
+}
+
+.music:hover>.credit-details {
+  opacity: 1;
+}
+
+.music:hover>.credit {
+  font-size: 10px;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 800px) {
   .main {
