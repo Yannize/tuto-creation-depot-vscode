@@ -18,7 +18,7 @@ p {
   text-align: center;
   background: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 0 5px rgb(200, 200, 200);
 }
 
@@ -38,11 +38,81 @@ a {
 img {
   display: block;
   margin: auto;
-  height: 700px;
+  width: 30%;
   transition: 0.3s;
 }
 
 img:hover {
   box-shadow: 0 0 50px rgb(155, 155, 155);
   transform: scale(1.02);
+}
+
+.container {
+  display: flex;
+  border: 3px solid black;
+}
+
+.container .img {
+  border: 3px solid red;
+}
+
+.container .precisions {
+  border: 3px solid green;
+  width: 30px;
+}
+
+.precisions .style-code {
+  background: rgb(92, 92, 92);
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 500px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.precisions .code {
+  box-shadow: inset 0 0 15px black;
+  background: rgb(36, 36, 36);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.code-container {
+  background: rgb(255, 255, 255);
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+}
+
+
+.precisions p {
+  width: 70%;
+  margin-bottom: 0;
+  line-height: 36px;
+}
+
+.precisions p a {
+  display: inline;
+  color: rgb(68, 106, 167);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: rgb(255, 167, 85);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.precisions p a:hover {
+  background: chocolate;
+}
+
+i {
+  color: grey;
+  font-size: 24px;
+}
+
+.fin {
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
 }

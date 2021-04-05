@@ -12,10 +12,27 @@
 <body>
   <p>Vérifier dans les préférences vscode que <strong>Git: Enable</strong>
     est bien coché</p>
-
   <a class="img" href="./probleme.jpg">
     <img src="./probleme.jpg" alt="guide vscode préférence git enable">
   </a>
+  <div class="precisions">
+    <p>Ou alors c'est que git n'est pas encore installé sur votre hôte <i> <br>(si vous tentez la manipulation depuis
+        votre
+        hôte et non depuis la VM) </i>,<br> dans ce cas, il suffit d'installer <a href="https://git-scm.com/downloads"
+        target="_blank" rel="noopener noreferrer">Git</a><br> à
+      l'installation faites <strong>next</strong> en laissant coché ce qui était coché par défaut <br>
+      puis dans le terminal <i>(de votre hôte)</i>
+      pensez à configurer git en tapant ces 2 lignes de code :</p>
+    <div class="code-container">
+      <div class="style-code">
+        <div class="code">git config --global user.email "your@mail.com"</div>
+      </div>
+      <div class="style-code">
+        <div class="code">git config --global user.name "votre_pseudo_Github"</div>
+      </div>
+    </div>
+    <p class="fin">Puis recommencez la manip' pour publier sur Git !</p>
+  </div>
 
 </body>
 
